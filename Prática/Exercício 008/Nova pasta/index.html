@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prática</title>
+</head>
+<body>
+    <h1>Prática das imagens dinâmicas</h1>
+    <p>Teste com a minha imagens em vários formatos de largura</p>
+
+    <picture>
+
+        <source media="(max-width: 750px )" srcset="imagens/imagem-pg.jpeg" type="image/jpeg">
+
+        <source media="(max-width: 1050px )" srcset="imagens/imagem-m.jpeg" type="image/jpeg">
+
+        <img src="imagens/imagem-g.jpeg" alt="Foto grande">
+    </picture>
+
+</body>
+</html>

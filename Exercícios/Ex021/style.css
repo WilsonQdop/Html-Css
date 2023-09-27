@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+body{
+    background-color: #402116;
+    font-family: sans-serif;
+}
+header{
+    background-color: #F2E3D5;
+    color: #4b433c;
+    padding: 5px;
+    margin:10px;
+    text-align: center;
+    font-weight: bold;
+}
+nav{
+    background-color: #a7a19b;
+    padding: 1px;
+}
+
+nav > a{
+    text-decoration: none;
+    
+    color:black;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 1px;
+    padding: 5px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+   
+}
+main{
+    padding: 5px;
+    background-color: #F2E3D5;
+}
+section{
+    text-align: center;
+}
+article{
+    background-color: #F2D194 ;
+    padding: 5px;
+    text-align: justify;
+
+}
+footer{
+    padding: 5px;
+    margin: 0px;
+    background-color: black;
+    color:white;
+    text-align: center;
+   
+}
+footer > p {
+    margin: 0px;
+}
+.historia{
+    background-color: rgb(209, 196, 196);
+    padding: 5px;
+    margin: 0px;
+}
+li{
+    font-weight: bold;
+    
+}
+.realce{
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 1px;
+}
+
+
