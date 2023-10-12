@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+        
+        
         td, th{
             border: 2px solid black;
 
         }
+       
+
         table {
             width: 500px;
             border-collapse: collapse;
@@ -16,6 +20,32 @@
         }
         .num {
             text-align: right;
+            
+        }
+        
+        thead, tfoot {
+            background-color: rgba(0, 0, 0, 0.842);
+            color:white
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .foot {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+          
+        }
+        tbody > tr:nth-child(even) {
+        
+        }
+        tbody > tr:hover {
+            background-color: brown;
         }
 
     </style>
@@ -23,12 +53,13 @@
 <body>
     <h1>Lista de múnicipios do Brasil por população</h1>
     <table>
-        <thead>
+        <caption>População das Unidades Federativas</caption>
+        <thead>    
             <tr>
-                <th>Posição</th>
-                <th>Município</th>
-                <th>Unidade federativa</th>
-                <th>População</th>              
+                <th scope="col">Posição</th>
+                <th scope="col">Município</th>
+                <th scope="col">Unidade federativa</th>
+                <th scope="col">População</th>              
             </tr>
         </thead>
         <tbody>
@@ -53,7 +84,7 @@
                 <td class="num">2 817 068</td>
                              
             </tr>
-            <tr> class="pos"
+            <tr> 
                 <td class="posi">4º</td>
                 <td>fortaleza</td>
                 <td>Ceará</td>
@@ -145,11 +176,12 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total</th>
+            <th scope="row">Total</th>
             <td colspan="2" class="foot">Brasil</td>
             <td class="num"><strong>40 509 163</strong></td>
 
         </tfoot>
+        
     </table>
 </body>
 </html>
